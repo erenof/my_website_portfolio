@@ -1,11 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
 body{
     font-family: 'Poppins', sans-serif;
 }
 
 section {
-    height: 500px;
     background-color: rgb(255, 255, 255);
-    border: solid black 1px;
 }
 
 .hero {
@@ -16,8 +19,10 @@ section {
 }
 
 footer {
-    height: 500px;
-    background-color: black;
+    background-color: #1c1d25;
+    color: white;
+    text-align: center;
+    padding: 80px;
 }
 
 nav {
@@ -33,6 +38,10 @@ ul {
     font-size: 30px;
 }
 
+ul.show {
+    display: block;
+}
+
 li {
     text-decoration: none;
 }
@@ -42,10 +51,24 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-size: 50px;
+}
+
 p {
     margin: 0;
     font-size: 30px;
     font-weight: 300;
+}
+
+.text-highlight {
+    color: #343a40;
+    font-weight: bold;
+}
+
+.subtext {
+    font-size: 15px;
+    font-weight: 300px;
 }
 
 .hero-area{
@@ -86,10 +109,111 @@ p {
 }
 
 .logo{
-    height: 80px;
+    height: 150px;
     margin: 30px;
 }
 
 .social {
     margin: 20px;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+
+.headshot {
+    width: 250px;
+    border-radius: 150px;
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+}
+
+.project-card {
+    width: 300px;
+    height: 500px;
+    box-shadow: 10px 10px 30px grey;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px){
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.project-image {
+    margin-top: 25px;
+    width: 250px;
+    border-radius: 125px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #ef744b;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus {
+    outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    ul {
+        display: none;
+        background-color: #2b2c38;
+        margin: 0px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38;
+
+    }
+
+    .logo {
+        display: none;
+    }
 }
